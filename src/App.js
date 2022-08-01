@@ -24,7 +24,7 @@ function App() {
         <span>
           {item.name}
         </span>
-        {(item.priority === "high") ? <span className="high">High</span> : <span className="low">Low</span>
+        {(item.priority === "high") ? <span className="high">HIGH!</span> : <span className="low">Low</span>
         }
         <form onSubmit={deleteItem}>
           <button onClick= { () => deleteItem(index) }>Done!</button>
